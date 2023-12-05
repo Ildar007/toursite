@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* accessing base layer of app through tailwind and setting background as black and text as gray*/
+@layer base {
+  body {
+    @apply bg-black text-gray-300
+  }
+}
