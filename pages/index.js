@@ -7,23 +7,14 @@ import MediumCard from '../components/MediumCard'
 import LargeCard from '../components/LargeCard'
 import Footer from '../components/Footer'
 import { useRouter } from 'next/router'
+import Reserve from './reserve'
 
 export default function Home({smallCardData, mediumData}) {
   const router = useRouter();
 
   
 
-  const pushSearchForExplore =(place) => {
-    router.push({
-      pathname: '/search',
-      query: {
-        input: place,
-        startingDate: new Date().toDateString(),
-        lastDate: new Date().toDateString(),
-        guests: numberOfGuests
-      }
-    })
-  }
+ 
 
   return (
     <div className="">
@@ -37,7 +28,7 @@ export default function Home({smallCardData, mediumData}) {
        <Banner />
        <main className='max-w-7xl mx-auto px-8 sm:px-18'>
        
-       <p className='mt-8 mb-8 text-white font-semibold text-4xl'>Мои Предложения</p>
+       {/* <p className='mt-8 mb-8 text-white font-semibold text-4xl'>Мои Предложения</p> */}
 
     {/* <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
       {smallCardData.map(({img, location, distance})=>{
@@ -49,15 +40,24 @@ export default function Home({smallCardData, mediumData}) {
 
       <p className='ml-3 mt-8 mb-8 text-white font-semibold text-4xl'>Live Anywhere</p> */}
 
-      <div className='flex flex-nowrap overflow-scroll scrollbar-hide'>
+      {/* <div className='flex flex-nowrap overflow-scroll scrollbar-hide'>
         {mediumData.map(({img, location, distance})=>{
           return(
             <MediumCard img={img} location={location} distance={distance} key={img}/>
           )
         })}
-      </div>
+      </div> */}
+    
 
-      <LargeCard title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
+      <Reserve title="The Greatest Outdoors" description="whitelist curated by Airbnb" buttonText="Get Inspired" img="https://i.imgur.com/xTyLZuF.jpeg"/>
   </main>
 
   <Footer />
@@ -66,14 +66,13 @@ export default function Home({smallCardData, mediumData}) {
 }
 
 
-export async function getStaticProps(){
-const smallCardData  = await fetch("https://www.jsonkeeper.com/b/4G1G").then(res=>res.json());
-const mediumData = await fetch("https://www.jsonkeeper.com/b/072E").then(res=>res.json());
+////const smallCardData  = await fetch("https://www.jsonkeeper.com/b/4G1G").then(res=>res.json());
+// const mediumData = await fetch("https://www.jsonkeeper.com/b/072E").then(res=>res.json());
 
-return {
-  props: {
-    smallCardData,
-    mediumData
-  }
-}
-} 
+// return {
+//   props: {
+//     smallCardData,
+//     mediumData
+//   }
+// }
+// } 

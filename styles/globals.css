@@ -8,3 +8,16 @@
     @apply bg-black text-gray-300
   }
 }
+.frame {
+  height: 113px;
+  overflow: hidden;
+  position: relative;
+  width: 439px;
+  }
+  .frame .group {
+  height: 47px;
+  left: 58px;
+  position: absolute;
+  top: 33px;
+  width: 255px;
+  }

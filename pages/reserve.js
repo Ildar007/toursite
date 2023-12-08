@@ -61,11 +61,11 @@ puttingData();
 
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>Hipster</title>
         <link rel="icon" href="https://i.imgur.com/ZNKoZzY.png" />
-      </Head>
-        <Header />
+      </Head> */}
+        {/* <Header /> */}
         <main>
         <section className=' pl-3 pt-5 space-x-2 flex flex-col max-w-7xl mx-auto px-8 sm:px-18'>
             <h2 className=' pb-3 text-semibold text-6xl'>
@@ -155,7 +155,8 @@ puttingData();
           
         </main>
         
-        <Footer />
+        {/* <Footer /> */}
+        
     </div>
   )
 }

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/router'
 
+
 function Banner() {
 
   const router = useRouter();
@@ -19,7 +20,7 @@ function Banner() {
   }
   return (
     <div className='relative h sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]'>
-        <Image src='https://i.imgur.com/UNxcdFY.jpg '  fill className="object-cover"/>
+        <Image src='/assets/Rectangle1.png' alt='MyImage'   fill className="object-cover"/>
         <div className=' absolute top-1/2 w-full text-center'>
             <p className='text-lg text-black'>Кахетия — родина вина, чачи и красоты!</p>
             {/* <button 

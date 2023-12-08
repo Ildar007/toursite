@@ -52,8 +52,17 @@ function Header() {
     <div className='grid grid-cols-3 p-4 shadow-lg sticky top-0 z-10 bg-black'>
         <div
         onClick={()=>{router.push('/')}}
-        className='relative h-12 flex items-center  my-auto cursor-pointer'>
-        <Image src="https://i.imgur.com/ZNKoZzY.png" fill className='object-contain object-left'/>
+        className='rlative h-12 flex items-center  my-auto cursor-pointer'>
+            <div className="frame">
+<img className="group" alt="Group" src="/assets/Group.svg" />
+<div className="frame-wrapper">
+<div className="overlap-group-wrapper">
+<div className="overlap-group">
+<div className="div" />
+<img className="icon" alt="Icon" src="/assets/cg-0.svg" />
+</div>
+</div>
+</div>
         
         </div>
         {/* <div className='flex border-2 rounded-full py-1 px-3 cursor-pointer z-50'>
@@ -117,6 +126,7 @@ function Header() {
        }
         */}
     </div> 
+    </div>
   )
 }
 

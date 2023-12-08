@@ -127,3 +127,36 @@
     filter: invert(1);
   }
 }
+.cg {
+  height: 63px;
+  width: 63px;
+}
+
+.cg .overlap-group {
+  height: 63px;
+  position: relative;
+}
+
+.cg .vector {
+  height: 25px;
+  left: 13px;
+  position: absolute;
+  top: 15px;
+  width: 38px;
+}
+
+.cg .img {
+  height: 11px;
+  left: 35px;
+  position: absolute;
+  top: 13px;
+  width: 11px;
+}
+
+.cg .vector-2 {
+  height: 63px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 63px;
+}
